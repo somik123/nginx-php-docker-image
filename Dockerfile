@@ -57,6 +57,6 @@ upload_max_filesize = 50M \n\
 post_max_size = 50M \n\
 memory_limit = 128M \n" >> /etc/php/${PHP_VERSION}/fpm/php.ini
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["sh", "/start.sh"]
