@@ -1,10 +1,10 @@
-# Use ubuntu 22.04
-FROM ubuntu:22.04 AS base
+# Use ubuntu 24.04
+FROM ubuntu:24.04 AS base
 
 # Set required environmental variables
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Singapore
-ENV PHP_VERSION 8.1
+ENV PHP_VERSION=8.3
 
 # Install dependencies
 RUN apt update \

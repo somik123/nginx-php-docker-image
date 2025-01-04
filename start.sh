@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Starting services..."
-service php8.1-fpm start
+service php8.3-fpm start
 nginx -g "daemon off;" &
 echo "Ready."
 chown -R www-data:www-data /var/www/html
