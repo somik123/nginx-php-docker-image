@@ -1,6 +1,16 @@
 # nginx-php-docker-image
 
-## How to use
+## How to use (with docker-compose)
+1. Copy the `docker-compose.yml` to a folder of your choice.
+1. Edit the file and change the container name.
+1. Create a html folder in the same directory as the `docker-compose.yml` file and place your php/css/js and other files in there.
+1. Start the container with the following command:
+   ```
+   docker compose up -d
+   ```
+
+
+## How to use (with docker command)
 Pull docker image: 
 ```
 docker image pull somik123/php-nginx:latest

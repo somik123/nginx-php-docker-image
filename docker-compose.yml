@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: php-nginx
+    image: somik123/php-nginx
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    volumes:
+      - ./html:/var/www/html
+
